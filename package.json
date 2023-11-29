@@ -2,12 +2,19 @@
   "name": "js-utils",
   "version": "1.0.0",
   "description": "Keeping safe my JS utility functions :)",
+  "engines": {
+    "node": ">=20.10.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["utils", "utilities", "helpers", "javascript", "node.js"],
+  "author": {
+    "name": "Icaro Silva",
+    "email": "ikaromarlon@gmail.com",
+    "url": "https://www.linkedin.com/in/ikaromarlon/"
+  },
   "license": "ISC",
   "devDependencies": {
     "git-commit-msg-linter": "^5.0.4",
