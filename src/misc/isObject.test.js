@@ -4,74 +4,23 @@ import isObject from './isObject.js'
 
 describe('isObject', () => {
   test.todo('should return true', () => {
-    let value
-    let result
-    const expected = true
-
-    value = {}
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = { key: 'value' }
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = new (class {})()
-    result = isObject(value)
-    assert.equal(result, expected)
+    assert.equal(isObject({}), true)
+    assert.equal(isObject({ key: 'value' }), true)
+    assert.equal(isObject(new (class {})()), true)
   })
 
   test.todo('should return false', () => {
-    let value
-    let result
-    const expected = false
-
-    value = function () {}
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = class {}
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = true
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = false
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = undefined
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = null
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = ''
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = 'value'
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = 0
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = 1
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = []
-    result = isObject(value)
-    assert.equal(result, expected)
-
-    value = [0, 1]
-    result = isObject(value)
-    assert.equal(result, expected)
+    assert.equal(isObject(function () {}), false)
+    assert.equal(isObject(class {}), false)
+    assert.equal(isObject(true), false)
+    assert.equal(isObject(false), false)
+    assert.equal(isObject(undefined), false)
+    assert.equal(isObject(null), false)
+    assert.equal(isObject(''), false)
+    assert.equal(isObject('value'), false)
+    assert.equal(isObject(0), false)
+    assert.equal(isObject(1), false)
+    assert.equal(isObject([]), false)
+    assert.equal(isObject([0, 1]), false)
   })
 })
