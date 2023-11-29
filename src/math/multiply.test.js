@@ -7,6 +7,6 @@ describe('multiply', () => {
     assert.equal(multiply(2, 3), 6)
     assert.equal(multiply(2, 3.5), 7)
     assert.equal(multiply(1.25, 2.55), 3.1875)
-    assert.equal(multiply(1.23, 4.56), 5.6088);
+    assert.equal(multiply(1.23, 4.56), 5.6088)
   })
 })
