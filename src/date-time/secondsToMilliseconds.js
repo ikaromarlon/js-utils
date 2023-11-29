@@ -1,0 +1,12 @@
+/**
+ * Converts a value representing seconds to milliseconds.
+ *
+ * @param {number} value - The number of seconds to be converted.
+ * @returns {number} Returns the equivalent value in milliseconds.
+ * @example
+ * const result = secondsToMilliseconds(3); // Output: 3000
+ * const result2 = secondsToMilliseconds(1.5); // Output: 1500
+ */
+export default function secondsToMilliseconds (value) {
+  return value * 1000
+}
