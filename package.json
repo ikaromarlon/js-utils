@@ -7,6 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
+    "lint": "standard --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["utils", "utilities", "helpers", "javascript", "node.js"],
