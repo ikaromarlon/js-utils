@@ -1,7 +1,7 @@
 {
   "name": "js-utils",
   "version": "1.0.0",
-  "description": "Keeping safe my JS utility functions :)",
+  "description": "Keeping my JS utility functions safe :)",
   "engines": {
     "node": ">=18.0.0"
   },

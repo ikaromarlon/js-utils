@@ -34,7 +34,7 @@ jobs:
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
+          git config --local user.name "GitHub Actions"
           git add .
           git diff-index --quiet HEAD || git commit -m "refactor(github-action): auto lint"
           git push
