@@ -7,6 +7,6 @@ describe('sleep', () => {
     const start = new Date()
     await sleep(1)
     const end = new Date()
-    assert.deepEqual(end.getUTCSeconds() - start.getUTCSeconds(), 1)
+    assert.equal(end.getUTCSeconds() - start.getUTCSeconds(), 1)
   })
 })
