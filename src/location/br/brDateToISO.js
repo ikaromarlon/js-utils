@@ -34,10 +34,3 @@ export default function brDateToISO (brDate, time = '') {
 
   return isoDateTime.toISOString()
 }
-
-// Example usage
-const result = brDateToISO('31/12/2022')
-console.log(result) // Output: '2022-12-31T00:00:00.000Z'
-
-const result2 = brDateToISO('01/01/2023', '12:30:45.500')
-console.log(result2) // Output: '2023-01-01T15:30:45.500Z'
