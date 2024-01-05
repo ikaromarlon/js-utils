@@ -7,7 +7,7 @@ Keeping my JS utility functions safe :)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
 <!-- [![Coverage Status](https://coveralls.io/repos/github/ikaromarlon/js-utils/badge.svg)](https://coveralls.io/github/ikaromarlon/js-utils) -->
 
-#### Node.js Versions
+#### Tested Node.js Versions
 1. [v18](https://nodejs.org/dist/latest-v18.x/docs/api/)
 2. [v20](https://nodejs.org/dist/latest-v20.x/docs/api/)
 

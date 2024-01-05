@@ -9,7 +9,7 @@
   "type": "module",
   "scripts": {
     "lint": "standard --fix",
-    "test": "node --test",
+    "test": "node --test --experimental-test-coverage",
     "prepare": "husky install"
   },
   "keywords": [
