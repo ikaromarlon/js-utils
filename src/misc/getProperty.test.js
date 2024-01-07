@@ -8,5 +8,7 @@ describe('getProperty', () => {
 
     assert.equal(getProperty(obj, 'user.name'), 'John')
     assert.equal(getProperty(obj, 'user.addresses[0].city'), 'New York')
+    assert.equal(getProperty(obj), undefined)
+    assert.equal(getProperty(null, 'key'), undefined)
   })
 })

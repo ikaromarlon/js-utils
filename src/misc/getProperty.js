@@ -3,7 +3,7 @@
  *
  * @param {Object} obj - The object from which to retrieve the property.
  * @param {string} path - The path to the property in dot notation. Array indices can also be represented with square brackets.
- * @returns {*} Returns the value of the specified property or `null` if the property is not found.
+ * @returns {*} Returns the value of the specified property or `undefined` if the property is not found.
  * @example
  * const obj = { user: { name: 'John', addresses: [{ city: 'New York' }] } };
  * const result = getProperty(obj, 'user.name'); // Output: 'John'
@@ -16,11 +16,11 @@ export default function getProperty (obj, path) {
    * @param {Object} innerObj - The object to traverse.
    * @param {string} prop - The current property or index to access.
    * @param {...string} props - Remaining properties or indices in the path.
-   * @returns {*} Returns the value of the specified property or `null` if not found.
+   * @returns {*} Returns the value of the specified property or `undefined` if not found.
    * @private
    */
   const _get = (innerObj, prop, ...props) => {
-    if (!innerObj) return null
+    if (!innerObj) return undefined
     const value = innerObj[prop]
     if (!props.length || !value) return value
     return _get(value, ...props)

@@ -10,6 +10,7 @@
   "scripts": {
     "lint": "standard --fix",
     "test": "node --test --experimental-test-coverage",
+    "test:coverage": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info",
     "prepare": "husky install"
   },
   "keywords": [

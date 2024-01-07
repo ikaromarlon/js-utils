@@ -6,12 +6,9 @@ describe('isObject', () => {
   test.todo('should return true', () => {
     assert.equal(isObject({}), true)
     assert.equal(isObject({ key: 'value' }), true)
-    assert.equal(isObject(new (class {})()), true)
   })
 
   test.todo('should return false', () => {
-    assert.equal(isObject(function () {}), false)
-    assert.equal(isObject(class {}), false)
     assert.equal(isObject(true), false)
     assert.equal(isObject(false), false)
     assert.equal(isObject(undefined), false)

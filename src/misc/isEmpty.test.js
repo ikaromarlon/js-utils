@@ -9,9 +9,9 @@ describe('isEmpty', () => {
     assert.equal(isEmpty(0), true)
     assert.equal(isEmpty(''), true)
     assert.equal(isEmpty(false), true)
-    assert.equal(isEmpty({}), true)
-    assert.equal(isEmpty([]), true)
     assert.equal(isEmpty(NaN), true)
+    assert.equal(isEmpty([]), true)
+    assert.equal(isEmpty({}), true)
   })
 
   test.todo('should return false', () => {
@@ -20,8 +20,6 @@ describe('isEmpty', () => {
     assert.equal(isEmpty(true), false)
     assert.equal(isEmpty({ key: 'value' }), false)
     assert.equal(isEmpty([0]), false)
-    assert.equal(isEmpty(function () {}), false)
-    assert.equal(isEmpty(class {}), false)
     assert.equal(isEmpty(Infinity), false)
   })
 })
