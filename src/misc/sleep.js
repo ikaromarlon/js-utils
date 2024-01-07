@@ -5,6 +5,7 @@ import secondsToMilliseconds from '../date-time/secondsToMilliseconds.js'
  *
  * @param {number} seconds - The number of seconds to sleep.
  * @returns {Promise<void>} A promise that resolves after the specified sleep duration.
+ *
  * @example
  * async function exampleUsage() {
  *   console.log('Start');
@@ -12,7 +13,7 @@ import secondsToMilliseconds from '../date-time/secondsToMilliseconds.js'
  *   console.log('After 2 seconds');
  * }
  * // Call the exampleUsage function
- * exampleUsage();
+ * await exampleUsage();
  */
 export default function sleep (seconds) {
   return new Promise(resolve => setTimeout(resolve, secondsToMilliseconds(seconds)))
