@@ -9,7 +9,7 @@
  * const result = multiply(2, 3.5); // Output: 7
  * const result2 = multiply(1.23, 4.56); // Output: 5.6088
  */
-export default function multiply (value1, value2) {
+export default function multiply (value1 = 0, value2 = 0) {
   const precision = 100 // two decimal places
   const multiplier = precision * precision
   return Math.round((value1 * precision) * (value2 * precision)) / multiplier
