@@ -10,11 +10,10 @@
  */
 export default function brDateToISO (brDate, time = '') {
   /**
-   * Brazilian time offset from UTC.
-   *
+   * Offset for Brazilian time zone (UTC-3).
    * @constant {number}
    */
-  const BR_OFFSET_TIME = -3
+  const BR_OFFSET_TIME = 3
 
   /**
    * Converts the Brazilian date string to ISO 8601 format.
@@ -29,7 +28,7 @@ export default function brDateToISO (brDate, time = '') {
     isoDateTime.setUTCHours(BR_OFFSET_TIME)
   } else {
     const [hours = 0, minutes = 0, seconds = 0, milliseconds = 0] = time.split(/\D/).map(Number)
-    isoDateTime.setUTCHours(hours - BR_OFFSET_TIME, minutes, seconds, milliseconds)
+    isoDateTime.setUTCHours(hours + BR_OFFSET_TIME, minutes, seconds, milliseconds)
   }
 
   return isoDateTime.toISOString()

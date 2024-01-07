@@ -27,7 +27,7 @@ export default function isoDateToBR (isoDate) {
    * Offset for Brazilian time zone (UTC-3).
    * @constant {number}
    */
-  const BR_OFFSET_TIME = -3
+  const BR_OFFSET_TIME = 3
 
   const [d, t] = isoDate.split('T')
 
@@ -39,7 +39,7 @@ export default function isoDateToBR (isoDate) {
     console.log(t.split(/\D/))
 
     dateInstance.setUTCHours(
-      t.includes('Z') ? h + BR_OFFSET_TIME : h,
+      t.includes('Z') ? h - BR_OFFSET_TIME : h,
       m,
       s,
       ms
