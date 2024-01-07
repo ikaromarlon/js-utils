@@ -3,12 +3,12 @@ import { strict as assert } from 'node:assert'
 import isObject from './isObject.js'
 
 describe('isObject', () => {
-  test.todo('should return true', () => {
+  test('should return true', () => {
     assert.equal(isObject({}), true)
     assert.equal(isObject({ key: 'value' }), true)
   })
 
-  test.todo('should return false', () => {
+  test('should return false', () => {
     assert.equal(isObject(true), false)
     assert.equal(isObject(false), false)
     assert.equal(isObject(undefined), false)

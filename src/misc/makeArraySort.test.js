@@ -3,7 +3,7 @@ import { strict as assert } from 'node:assert'
 import makeArraySort from './makeArraySort.js'
 
 describe('makeArraySort', () => {
-  test.todo('should create a comparator function for sorting an array of objects based on a specified key.', () => {
+  test('should create a comparator function for sorting an array of objects based on a specified key.', () => {
     const data = [
       { name: 'John', age: 30 },
       { name: 'Alice', age: 25 },

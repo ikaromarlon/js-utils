@@ -5,8 +5,8 @@
  * @returns {number} Returns the decimal representation of the time value.
  * @throws {Error} Throws an error if the input time format is invalid.
  * @example
- * const result = timeToDecimal('08:30'); // Output: 8.5
- * const result2 = timeToDecimal('12:45'); // Output: 12.75
+ * const result = timeToDecimal('08:30') // Output: 8.5
+ * const result2 = timeToDecimal('12:45') // Output: 12.75
  */
 export default function timeToDecimal (value) {
   /**

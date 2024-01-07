@@ -5,9 +5,11 @@
  * @param {string} path - The path to the property in dot notation. Array indices can also be represented with square brackets.
  * @returns {*} Returns the value of the specified property or `undefined` if the property is not found.
  * @example
- * const obj = { user: { name: 'John', addresses: [{ city: 'New York' }] } };
- * const result = getProperty(obj, 'user.name'); // Output: 'John'
- * const result2 = getProperty(obj, 'user.addresses[0].city'); // Output: 'New York'
+ * const obj = { user: { name: 'John', addresses: [{ city: 'New York' }] } }
+ *
+ * const result = getProperty(obj, 'user.name') // Output: 'John'
+ *
+ * const result2 = getProperty(obj, 'user.addresses[0].city') // Output: 'New York'
  */
 export default function getProperty (obj, path) {
   /**

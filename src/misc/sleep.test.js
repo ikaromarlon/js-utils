@@ -4,7 +4,7 @@ import sleep from './sleep.js'
 import millisecondsToSeconds from '../date-time/millisecondsToSeconds.js'
 
 describe('sleep', () => {
-  test.todo('should sleep (delay) for the specified number of seconds', async () => {
+  test('should sleep (delay) for the specified number of seconds', async () => {
     const start = new Date()
     await sleep(1)
     const end = new Date()

@@ -5,7 +5,7 @@
  * @param {number|string} value - The value to be masked.
  * @returns {string} Returns the masked string based on the provided mask.
  * @example
- * const result = applyMask('xx-xx', 12345);
+ * const result = applyMask('xx-xx', 12345)
  * // Output: '12-34'
  */
 export default function applyMask (mask, value) {

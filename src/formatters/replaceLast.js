@@ -6,7 +6,7 @@
  * @param {string} replaceWith - The replacement for the last occurrence of the substring.
  * @returns {string} Returns a new string with the last occurrence of the substring replaced.
  * @example
- * const result = replaceLast('Hello world, world!', 'world', 'universe');
+ * const result = replaceLast('Hello world, world!', 'world', 'universe')
  * // Output: 'Hello world, universe!'
  */
 export default function replaceLast (value, toReplace, replaceWith) {

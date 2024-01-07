@@ -5,8 +5,8 @@
  * @param {string} [time=''] - The optional time string in HH:mm:ss.SSS format.
  * @returns {string} Returns the ISO 8601 formatted date string.
  * @example
- * const result = brDateToISO('31/12/2022'); // Output: '2022-12-30T21:00:00.000Z'
- * const result2 = brDateToISO('01/01/2023', '12:30:45.500'); // Output: '2023-01-01T15:30:45.500Z'
+ * const result = brDateToISO('31/12/2022') // Output: '2022-12-30T21:00:00.000Z'
+ * const result2 = brDateToISO('01/01/2023', '12:30:45.500') // Output: '2023-01-01T15:30:45.500Z'
  */
 export default function brDateToISO (brDate, time = '') {
   /**

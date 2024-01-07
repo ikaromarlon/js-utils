@@ -3,7 +3,7 @@ import { strict as assert } from 'node:assert'
 import isEmpty from './isEmpty.js'
 
 describe('isEmpty', () => {
-  test.todo('should return true', () => {
+  test('should return true', () => {
     assert.equal(isEmpty(undefined), true)
     assert.equal(isEmpty(null), true)
     assert.equal(isEmpty(0), true)
@@ -14,7 +14,7 @@ describe('isEmpty', () => {
     assert.equal(isEmpty({}), true)
   })
 
-  test.todo('should return false', () => {
+  test('should return false', () => {
     assert.equal(isEmpty(1), false)
     assert.equal(isEmpty('value'), false)
     assert.equal(isEmpty(true), false)

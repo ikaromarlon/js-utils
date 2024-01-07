@@ -3,7 +3,7 @@ import { strict as assert } from 'node:assert'
 import isHttpStatusCode from './isHttpStatusCode.js'
 
 describe('isHttpStatusCode', () => {
-  test.todo('should return true', () => {
+  test('should return true', () => {
     assert.equal(isHttpStatusCode(100), true)
     assert.equal(isHttpStatusCode(200), true)
     assert.equal(isHttpStatusCode(201), true)
@@ -15,7 +15,7 @@ describe('isHttpStatusCode', () => {
     assert.equal(isHttpStatusCode(502), true)
   })
 
-  test.todo('should return false', () => {
+  test('should return false', () => {
     assert.equal(isHttpStatusCode(700), false)
     assert.equal(isHttpStatusCode('abc'), false)
   })

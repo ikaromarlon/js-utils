@@ -9,6 +9,7 @@
   "type": "module",
   "scripts": {
     "lint": "standard --fix",
+    "lint:staged": "lint-staged",
     "test": "node --test --experimental-test-coverage",
     "test:coverage": "node --test --experimental-test-coverage --test-reporter=lcov --test-reporter-destination=lcov.info",
     "prepare": "husky install"
@@ -29,6 +30,7 @@
   "devDependencies": {
     "git-commit-msg-linter": "^5.0.4",
     "husky": "^8.0.0",
+    "lint-staged": "^15.2.0",
     "standard": "^17.1.0"
   },
   "standard": {

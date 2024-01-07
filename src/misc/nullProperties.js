@@ -5,8 +5,8 @@
  * @param {boolean} [forceEmptySecondLevelObjects=false] - If true, replaces properties in the second level with empty objects.
  * @returns {*} Returns a new object or array with non-object properties replaced by null or empty objects.
  * @example
- * const data = { a: 1, b: { c: 2, d: 'hello' }, e: [3, { f: null }] };
- * const result = nullProperties(data); // Output: { a: 1, b: { c: 2, d: null }, e: [3, { f: null }] }
+ * const data = { a: 1, b: { c: 2, d: 'hello' }, e: [3, { f: null }] }
+ * const result = nullProperties(data) // Output: { a: 1, b: { c: 2, d: null }, e: [3, { f: null }] }
  */
 export default function nullProperties (data, forceEmptySecondLevelObjects = false) {
   if (typeof data !== 'object' || !data) return null

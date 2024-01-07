@@ -8,12 +8,12 @@ import secondsToMilliseconds from '../date-time/secondsToMilliseconds.js'
  *
  * @example
  * async function exampleUsage() {
- *   console.log('Start');
- *   await sleep(2);
- *   console.log('After 2 seconds');
+ *   console.log('Start')
+ *   await sleep(2)
+ *   console.log('After 2 seconds')
  * }
  * // Call the exampleUsage function
- * await exampleUsage();
+ * await exampleUsage()
  */
 export default function sleep (seconds) {
   return new Promise(resolve => setTimeout(resolve, secondsToMilliseconds(seconds)))

@@ -8,19 +8,19 @@
  *
  * @example
  * // Returns { date: '31/12/2022', time: '00:00:00.000' }
- * isoDateToBR('2022-12-31');
+ * isoDateToBR('2022-12-31')
  *
  * @example
  * // Returns { date: '01/01/2023', time: '00:00:00.000' }
- * isoDateToBR('2023-01-01T00:00:00.000');
+ * isoDateToBR('2023-01-01T00:00:00.000')
  *
  * @example
  * // Returns { date: '31/12/2022', time: '21:00:00.000' }
- * isoDateToBR('2023-01-01T00:00:00.000Z');
+ * isoDateToBR('2023-01-01T00:00:00.000Z')
  *
  * @example
  * // Returns { date: '01/01/2023', time: '20:59:59.999' }
- * isoDateToBR('2023-01-01T23:59:59.999Z');
+ * isoDateToBR('2023-01-01T23:59:59.999Z')
  */
 export default function isoDateToBR (isoDate) {
   /**
@@ -35,8 +35,6 @@ export default function isoDateToBR (isoDate) {
 
   if (t) {
     const [h = 0, m = 0, s = 0, ms = 0] = t.split(/\D/).map(Number)
-
-    console.log(t.split(/\D/))
 
     dateInstance.setUTCHours(
       t.includes('Z') ? h - BR_OFFSET_TIME : h,

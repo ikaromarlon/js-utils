@@ -6,8 +6,8 @@ import isObject from './isObject.js'
  * @param {*} data - The data (object or array) to clean up.
  * @returns {*} Returns a new object or array with undefined values removed.
  * @example
- * const data = { a: 1, b: undefined, c: { d: 2, e: undefined } };
- * const result = cleanupUndefinedValues(data); // Output: { a: 1, c: { d: 2 } }
+ * const data = { a: 1, b: undefined, c: { d: 2, e: undefined } }
+ * const result = cleanupUndefinedValues(data) // Output: { a: 1, c: { d: 2 } }
  */
 export default function cleanupUndefinedValues (data) {
   if (isObject(data)) {
