@@ -10,10 +10,10 @@
  *   { name: 'Alice', age: 25 },
  *   { name: 'Bob', age: 35 }
  * ];
- * const sortedData = data.sort(sortArray('age', 'asc'));
+ * const sortedData = data.sort(makeArraySort('age', 'asc'));
  * // Result: [{ name: 'Alice', age: 25 }, { name: 'John', age: 30 }, { name: 'Bob', age: 35 }]
  */
-export default function sortArray (key, order = 'asc') {
+export default function makeArraySort (key, order = 'asc') {
   /**
    * Comparator function for sorting objects based on the specified key.
    *
