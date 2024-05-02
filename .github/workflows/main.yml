@@ -10,7 +10,7 @@ on:
 
 env:
   DEFAULT_NODE_VERSION: 20
-  LATEST_NODE_VERSION: 21
+  LATEST_NODE_VERSION: 22
 
 jobs:
   lint:
@@ -39,12 +39,12 @@ jobs:
           git add .
           git diff-index --quiet HEAD || git commit -m "refactor(github-action): auto lint"
           git push
-  
+
   test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [18, 20, 21]
+        node-version: [18, 20, 22]
     steps:
       - name: Checkout code
         uses: actions/checkout@v4

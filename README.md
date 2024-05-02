@@ -10,7 +10,7 @@ Keeping my JS utility functions safe :)
 #### Tested Node.js Versions
 1. [v18](https://nodejs.org/dist/latest-v18.x/docs/api/)
 2. [v20](https://nodejs.org/dist/latest-v20.x/docs/api/)
-3. [v21](https://nodejs.org/dist/latest-v21.x/docs/api/)
+3. [v22](https://nodejs.org/dist/latest-v22.x/docs/api/)
 
 #### Techniques and Patterns
 1. Tests (unit)
