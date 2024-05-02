@@ -46,6 +46,7 @@ describe('isAdult', () => {
 
   test('should return false if the input is not a valid age or date', () => {
     assert.equal(isAdult(), false)
+    assert.equal(isAdult(NaN), false)
     assert.equal(isAdult(null), false)
     assert.equal(isAdult(''), false)
     assert.equal(isAdult(true), false)
