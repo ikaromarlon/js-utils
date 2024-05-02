@@ -14,9 +14,7 @@ export default async function retryAsyncOperation (asyncFn, initialTimeout = 100
   } catch (err) {
     if (errorHandler) {
       const result = errorHandler(err)
-      if (result) {
-        return result
-      }
+      if (result) return result
     }
 
     if (maxAttempts > 0) {
