@@ -19,11 +19,10 @@ describe('isValidISODateString', () => {
   })
 
   test('should return false for non-string inputs', () => {
+    assert.equal(isValidISODateString(), false)
     assert.equal(isValidISODateString(null), false)
-    assert.equal(isValidISODateString(undefined), false)
-    assert.equal(isValidISODateString(123), false)
     assert.equal(isValidISODateString({}), false)
-    assert.equal(isValidISODateString([]), false)
-    assert.equal(isValidISODateString(true), false)
+    assert.equal(isValidISODateString(123), false)
+    assert.equal(isValidISODateString(new Date()), false)
   })
 })
