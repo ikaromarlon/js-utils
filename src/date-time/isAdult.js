@@ -1,4 +1,4 @@
-import isValidISODateString from './isValidISODateString.js'
+import isValidDate from './isValidDate.js'
 
 /**
  * Checks if the given age or date corresponds to an adult person (18+).
@@ -8,18 +8,9 @@ import isValidISODateString from './isValidISODateString.js'
  */
 export default function isAdult (ageOrDate) {
   const ADULT_AGE = 18
-  const ALLOWED_TYPES = ['number', 'object', 'string']
-
-  if (
-    !ageOrDate ||
-    !ALLOWED_TYPES.includes(typeof ageOrDate) ||
-    (typeof ageOrDate === 'object' && !(ageOrDate instanceof Date)) ||
-    (typeof ageOrDate === 'string' && !isValidISODateString(ageOrDate))
-  ) {
-    return false
-  }
 
   if (typeof ageOrDate === 'number') return ageOrDate >= ADULT_AGE
+  if (!isValidDate(ageOrDate)) return false
 
   const d = new Date(ageOrDate)
 
